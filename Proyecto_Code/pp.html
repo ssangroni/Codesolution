@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Proyecto</title>
+        <meta name="author" content="Samuel Sangroni">
+
+        <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+            display: grid; 
+            justify-content: center;
+            font-size: large;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 2px solid #ccc; 
+            border-radius: 5px;
+        }
+        button { 
+            padding: 10px 15px;
+            background-color: #5cb85c; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        button:hover { background-color: #4cae4c; }
+        </style>
+    </head>
+
+    <body>
+        <!--registro-->
+        <div>
+            <h4>Registro de Clientes</h4>
+            <form id="formreg"> 
+                <input type="text" id="name" placeholder="Nombre y Apellido" required>
+                <input type="email" id="email" placeholder="Correo" minlength="7" required>
+                <input type="password" id="password" placeholder="Contraseña (mínimo 8 caracteres)" minlength="8" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+        <script src="pp.js"></script>
+    </body>
+</html>
